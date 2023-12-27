@@ -1,0 +1,808 @@
+body {
+    background-color: #0B0B0F;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.btn {
+    background-color: orange;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.btn:hover {
+    background-color: rgb(254, 178, 38) !important;
+    color: black !important;
+}
+
+
+.navbar {
+    padding-top: 3px;
+    padding-bottom: 4px;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0);
+    background-color: inherit;
+}
+
+.logo-text {
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 32px;
+    color: white;
+}
+
+.logo-text:hover {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.navbar-brand {
+    padding: 0px;
+    margin-left: 19px;
+    margin-right: 0px;
+    
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    padding-left: 40px;
+    color: white;
+}
+
+.nav-link-tag {
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    margin-left: 19px; 
+    padding-bottom: 0px;
+    cursor: pointer;
+} 
+
+.nav-link:hover {
+    color: rgb(0, 0, 225);
+    text-decoration: underline;
+}
+
+.nav-link:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:active {
+    color: rgb(0, 0, 184);
+    text-decoration: underline;
+}
+
+
+.nav-link-btn-div {
+    display: flex;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-left: auto; 
+}
+
+.nav-link-btn {
+    width: 75px;
+    text-decoration: none;
+    margin-left: 10px
+}
+
+.logout-btn-div {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted rgb(23, 23, 23);
+}
+
+.logout-btn-div .logged-in-tooltip-text {
+    visibility: hidden;
+    background-color: rgb(23, 23, 23);
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 70%;
+    margin-left: -60px;
+}
+
+.logout-btn-div .logged-in-tooltip-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(23, 23, 23) transparent;
+}
+
+.logout-btn-div:hover .logged-in-tooltip-text {
+    visibility: visible;
+}
+
+#container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 70px 60px 0px 60px;
+}
+
+.login-view-div, .signup-view-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 60px;
+    padding-top: 120px;
+    box-sizing: border-box;
+    
+}
+
+
+.login-form, .signup-form {
+    width: 500px;
+    text-align: center;
+}
+
+.form-group-div {
+    display: flex;
+    flex-direction: column;
+     
+}
+
+.form-cls {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
+
+.signup-link, .login-link {
+    margin-top: 20px;
+}
+
+.submit-btn {
+    width: 85px;
+    padding: 7px;
+    color: rgb(0, 0, 0);
+}
+
+.create-pro-btn {
+    width: 145px;
+}
+
+.display-all-projects-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card {
+    cursor: pointer;
+    background: none;
+    border: solid;
+    border-width: 2px;
+    border-radius: 2px;
+    border-color: rgb(26, 25, 25);
+    color: white;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.card-text {
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.card-footer {
+    font-size: small;
+}
+
+.user-profile-link {
+    text-decoration: none;
+    color: white;
+}
+
+.user-profile-link:hover {
+    color: white;
+}
+
+.project-body-div, .display-task-body-div {
+    display: flex;
+    flex-direction: row;
+    width: 1250px;
+    color: white;
+    border: solid;
+    border-color: rgb(25, 25, 25);
+    border-width: 2px;
+    border-radius: 3px;
+    
+}
+
+.project-content-div, .display-task-content-div {
+    flex: 8.5;
+    padding: 40px;
+}
+
+.project-content-hr, .display-task-content-hr {
+    color: rgb(113, 113, 113);
+    margin-top: 30px;
+    height: 1px;
+    width: 100%;
+}
+
+.project-title-div, .display-task-title-div {
+    display: flex;
+    justify-content: center;
+}
+
+.side-bar-head-div, .task-form-side-bar-head-div, .display-task-sidebar-head-div {
+    display: flex;
+}
+
+
+.side-bar-head-btn, .side-bar-head-close-btn, .task-form-side-bar-head-btn, .task-form-side-bar-head-close-btn, .display-task-sidebar-head-btn, .display-task-sidebar-head-close-btn {
+    margin-left: 3px;
+    border: none;
+    background: none;
+    outline: none;
+    margin-bottom: 16px;
+}
+
+.task-form-side-bar-head-close-btn:focus {
+    outline: none;
+}
+
+.side-bar-head-close-btn:focus {
+    outline: none;
+}
+
+.edit-pro-title-btn, .edit-task-title-btn {
+    margin-left: 15px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.task-head, .comment-head {
+    display: flex;
+}
+
+.task-head h4, .comment-head h4 {
+    margin-right: 15px;
+}
+
+.add-task-btn {
+    border: none;
+    background: none;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.desc-head-text-div, .display-task-desc-head-div {
+    display: flex;
+}
+
+.edit-pro-desc-btn, .edit-task-desc-btn {
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    background: none;
+    margin-bottom: 8px;
+}
+
+
+.task-body-div {
+    cursor: pointer;
+    border: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgb(26, 25, 25);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 30px;
+    margin-right: 15px;
+}
+
+
+.task-title {
+    font-size: medium;
+    padding-top: 3px;
+    margin-bottom: 2px;
+}
+
+.task-subtitle {
+    font-size: small;
+    padding-bottom: 3px;
+}
+
+.all-tasks-div {
+    overflow: auto;
+    max-height: 160px;
+}
+
+.all-tasks-div::-webkit-scrollbar {
+    width: 7px;
+}
+
+.all-tasks-div::-webkit-scrollbar-track {
+    background-color: #1c1c1d;
+    border-radius: 5px;
+}
+
+.all-tasks-div::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+
+.task-body-div:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+.alert-box {
+    border: solid;
+    border-color: rgb(26, 25, 25);
+    border-radius: 4px;
+    border-width: 1px;
+    color: white;
+    padding: 20px;
+}
+
+.display-project-body-divider, .display-task-body-divider {
+    flex: 0.15;
+    width: 3px;
+}
+
+.project-sidebar-div, .display-task-sidebar-div { 
+    flex: 1.35;
+    position: relative;
+    padding: 10px;
+}
+
+.edit-pro-title-field, .edit-task-title-field {
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    width: 300px;
+    border: none;
+}
+
+.edit-pro-desc-field, .edit-task-desc-field {
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 16px;
+    padding: 0px;
+    width: 100%;
+}
+
+
+
+.task-form-body-div {
+    display: flex;
+    flex-direction: row;
+    width: 1250px;
+    color: white;
+    border: solid;
+    border-color: rgb(26, 25, 25);
+    border-width: 2px;
+    border-radius: 3px;
+}
+
+.task-form-content-div {
+    flex: 8.5;
+    padding: 40px;
+}
+
+.task-title-input-field {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgb(25, 25, 25);
+    border-radius: 5px;
+    color: white;
+}
+
+.task-desc-textarea {
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    border: none;
+    background-color: rgb(25, 25, 25);
+    border-radius: 5px;
+    color: white;
+}
+
+.task-form-save-btn {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.task-form-save-btn:focus {
+    outline: none;
+}
+
+.task-form-divider {
+    flex: 0.15;
+    width: 3px;
+}
+
+.task-form-side-bar-div {
+    flex: 1.3;
+    padding: 20px;
+}
+
+
+.member-search-box-div {
+    background-color: #0B0B0F;
+    border: solid;
+    border-color: rgb(25, 25, 25);
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+} 
+
+.pro-inv-box {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: -60px;
+}
+
+.task-assign-box {
+    position: absolute;
+    z-index: 1;
+    right: -7px;
+    bottom: 209px;
+}
+
+.display-task-assign-box {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: -60px;
+}
+
+.pro-inv-search-box-div, .task-assign-search-box-div, .display-task-search-box-div {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 3px;
+}
+
+.pro-inv-search-box-input, .task-assign-search-box-input, .display-task-search-box-input {
+    background-color: #1c1c1d;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 100%;
+}
+
+.task-assign-search-box-input::placeholder {
+    font-size: 12px;
+}
+
+.pro-inv-search-box-input::placeholder {
+    font-size: 12px;
+}
+
+.pro-inv-search-box-btn, .task-assign-search-box-btn, .display-task-search-box-btn {
+    border: none;
+    background-color: #1c1c1d;
+    outline: none;
+    padding: 5px;
+}
+
+.task-assign-search-box-btn:focus {
+    outline: none;
+}
+
+.pro-inv-search-box-btn:focus {
+    outline: none;
+}
+
+.display-task-search-box-btn:focus  {
+    outline: none;
+}
+
+.pro-inv-search-box-btn i{
+    color: gray;
+}
+
+.task-assign-search-box-btn i{
+    color: gray;
+}
+
+.display-task-search-box-btn i {
+    color: gray;
+}
+
+.pro-inv-search-box-btn:hover i{
+    color: rgb(185, 185, 185);
+}
+
+.task-assign-search-box-btn:hover i{
+    color: rgb(185, 185, 185);
+}
+
+.display-task-search-box-btn:hover i{
+    color: rgb(185, 185, 185);
+}
+
+.pro-inv-search-box-content-div, .task-assign-search-box-content-div, .display-task-search-box-content-div {
+    position: static;
+    margin-top: 15px;
+    width: 100%;
+    border-top: 2px solid rgb(25, 25, 25);
+    overflow: auto;
+    max-height: 120px;
+}
+
+.pro-inv-search-box-content-div::-webkit-scrollbar {
+    width: 7px;
+}
+
+.pro-inv-search-box-content-div::-webkit-scrollbar-track {
+    background-color: #1c1c1d;
+}
+
+.pro-inv-search-box-content-div::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.task-assign-search-box-content-div::-webkit-scrollbar {
+    width: 7px;
+}
+
+.task-assign-search-box-content-div::-webkit-scrollbar-track {
+    background-color: #1c1c1d;
+}
+
+.task-assign-search-box-content-div::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.pro-inv-search-box-display-user, .task-assign-search-box-display-user, .display-task-search-box-display-user {
+    position: static;
+    color: white;
+    font-style: 'Franklin Gothic Medium';
+    font-size: 14px;
+    padding: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.pro-inv-search-box-display-user:hover {
+    opacity: 0.6;
+}
+
+.task-assign-search-box-display-user:hover {
+    opacity: 0.6;
+}
+
+.project-delete-btn, .display-task-delete-btn {
+    background: none;
+    border: solid;
+    outline: none;
+    border-width: 1px;          
+    border-color: rgb(112, 0, 0);
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    font-family: 'Franklin Gothic Medium';
+    transition: 0.6s;
+}
+
+.display-task-delete-btn {
+    margin-left: 10px;
+}
+
+.project-delete-btn:hover, .display-task-delete-btn:hover {
+    background-color: rgb(193, 0, 0);
+}
+
+.project-delete-btn:focus, .display-task-delete-btn:focus {
+    outline: none;
+}
+
+.all-comments-div {
+    overflow: auto;
+    max-height: 150px;
+}
+
+.all-comments-div::-webkit-scrollbar {
+    width: 7px;
+}
+
+.all-comments-div::-webkit-scrollbar-track {
+    background-color: #1c1c1d;
+    border-radius: 5px;
+}
+
+.all-comments-div::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px
+}
+
+.comment-body-div {
+    border: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgb(26, 25, 25);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 30px;
+    margin-right: 15px;
+}
+
+.comment-content {
+    font-size: 14px;
+    padding-top: 3px;
+    margin-bottom: 2px;
+}
+.comment-footer {
+    font-size: 10px;
+    padding-bottom: 3px;
+}
+
+.create-comment-btn {
+    border: none;
+    background: none;
+    margin-bottom: 8px;
+    outline: none;
+}
+
+.create-comment-textarea {
+    background: none;
+    border: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgb(26, 25, 25);
+    outline: none;
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    height: 115px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+
+
+}
+
+.create-comment-textarea::placeholder {
+    font-size: 14px;
+}
+
+.li-profile-link {
+    cursor: pointer;
+}
+
+.li-profile-link:hover {
+    text-decoration: underline;
+}
+
+.display-user-profile-outer-div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.display-user-profile-title-element-div {
+    padding-left: 30px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.display-user-profile-body-div {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    padding: 10px;
+    border-top: 1px solid rgb(25, 25, 25);
+    border-bottom: 1px solid rgb(25, 25, 25);
+}
+
+.display-user-profile-details-div {
+    flex: 3.5;
+    padding-left: 20px;
+    padding-right: 83px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.display-user-profile-body-divider {
+    flex: 0.15;
+    width: 3px;
+}
+
+.display-user-profile-projects-div {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.display-user-profile-bio-text-div {
+    background-color: rgb(17, 17, 17);
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    min-height: 100px;
+}
+
+.display-settings-btn {
+    margin-left: 15px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.display-user-profile-settings-all-inputs-div {
+    margin-top: 20px;
+}
+
+.display-user-profile-settings-all-inputs-div input, .display-user-profile-settings-all-inputs-div textarea {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.display-user-profile-settings-all-inputs-div input::placeholder, .display-user-profile-settings-all-inputs-div textarea::placeholder {
+    color: gray;
+}
+
+.display-user-profile-settings-all-inputs-div label {
+    font-family: 'Franklin Gothic Medium';
+}
+
+.display-user-profile-save-btn {
+    width: fit-content !important;
+    padding: 7px !important;
+}

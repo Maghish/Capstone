@@ -1,0 +1,21 @@
+@media (max-width: 1000px) {
+    .create-project-form-outer-div {
+        width: 400px;
+        padding: 5% !important;
+        padding-top: 50px !important;
+    }
+
+    .form-cls {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 605px) {
+    .create-project-form-outer-div {
+        width: 300px;
+    }
+
+    .create-project-form-outer-div h2 {
+        font-size: 24px;
+    }
+}

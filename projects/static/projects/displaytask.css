@@ -1,0 +1,93 @@
+@media (max-width: 1350px) {
+    .display-task-body-div {
+        width: 1000px;
+    }
+
+    .display-task-sidebar-div {
+        padding: 10px;
+    }
+
+    .display-task-content-div {
+        padding: 40px;
+    }
+} 
+
+@media (max-width: 1095px) {
+    .display-task-body-div {
+        flex-direction: column;
+        width: 800px;
+    }
+
+    .display-task-content-div {
+        padding-bottom: 10px;
+    }
+
+    .display-task-sidebar-div {
+        padding: 40px;
+        padding-top: 0px;
+    }
+
+    .display-task-sidebar-head-div p {
+        margin-bottom: 8px;
+    }
+
+    .display-task-assign-box {
+        top: 40px;
+        left: -30px;
+    }
+
+    .display-task-sidebar-members-ul {
+        padding-left: 45px;
+    }
+}
+
+@media (max-width: 895px) {
+    .display-task-body-div {
+        width: 600px;
+    }
+}
+
+@media (max-width: 695px) {
+    .display-task-div {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .display-task-body-div {
+        width: auto;
+    }
+
+    .display-task-content-div {
+        padding: 20px;
+        padding-bottom: 5px;
+    }
+
+    .display-task-sidebar-div {
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+    #container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        align-items: normal;
+    }
+
+    .display-task-assign-box {
+        left: -15px;
+    }    
+
+    .display-task-sidebar-head-btn, .display-task-sidebar-head-close-btn {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 375px) {
+    .display-task-desc-div p {
+        font-size: smaller;
+    }
+
+    .comment-body-div {
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,107 @@
+@media (max-width: 1350px) {
+    .project-body-div {
+        width: 1000px;
+    }
+
+    .project-sidebar-div {
+        padding: 10px;
+    }
+
+    .project-content-div {
+        padding: 40px;
+    }
+}
+
+
+@media (max-width: 1095px) {
+    .project-body-div {
+        flex-direction: column;
+        width: 800px;
+    }
+
+    .project-content-div {
+        padding-bottom: 10px;
+    }
+
+    .project-sidebar-div {
+        padding: 40px;
+        padding-top: 0px;
+    }
+
+    .side-bar-head-div p {
+        margin-bottom: 8px;
+    }
+
+    .pro-inv-box {
+        top: 40px;
+        left: -30px;
+    }
+
+    .project-sidebar-members-ul {
+        padding-left: 45px;
+    }
+
+    .li-profile-link {
+        margin-left: 0px;
+    }
+
+}
+
+@media (max-width: 895px) {
+    .project-body-div {
+        width: 600px;
+    }
+}
+
+@media (max-width: 695px) {
+    .display-project-div {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .project-body-div {
+        width: auto;
+    }
+
+    .project-content-div {
+        padding: 20px;
+        padding-bottom: 5px;
+    }
+
+    .project-sidebar-div {
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+    #container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        align-items: normal; 
+    }
+
+    .pro-inv-box {
+        left: -15px;
+    }
+
+    .side-bar-head-btn, .side-bar-head-close-btn {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 375px) {
+    .desc-head-div p {
+        font-size: smaller;
+    }
+
+    .task-body-div {
+        padding-left: 20px;
+    }
+
+    .task-subtitle {
+        font-size: 10px !important;
+    }
+
+    .task-subtitle a {
+        font-size: 10px !important;
+    }
+}

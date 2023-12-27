@@ -1,0 +1,10 @@
+@media (max-width: 1000px) {
+    .login-form, .signup-form {
+        width: 70%;
+    }
+
+    .login-view-div, .signup-view-div {
+        padding: 5%;
+        padding-top: 120px;
+    }
+}

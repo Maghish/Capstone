@@ -1,0 +1,50 @@
+@media (max-width: 1370px) {
+    .task-form-body-div {
+        width: auto !important;
+    }
+
+    .display-create-task-form-div {
+        padding-left: 25px !important; 
+        padding-right: 25px !important; 
+    }
+
+    #container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        align-items: normal;
+    }
+
+    .task-assign-box {
+        right: -24px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .task-form-content-div {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .task-assign-box {
+        right: -38px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .task-form-side-bar-div {
+        display: none;
+    }
+
+    .task-form-divider {
+        display: none;
+    }
+
+    .task-form-content-div {
+        padding: 20px !important;
+    }
+
+    .task-form-save-btn-div {
+        justify-content: center;
+    }
+}

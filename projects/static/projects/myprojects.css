@@ -1,0 +1,31 @@
+@media (max-width: 785px) {
+    .display-user-projects-div .card {
+        width: 400px;
+    }
+
+    .display-user-projects-div .card .card-body {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 505px) {
+    .display-user-projects-div .card {
+        width: auto;
+    }
+
+    .display-user-projects-div .card .card-body {
+        padding: 10px;
+    }
+
+    .display-user-projects-outer-div {
+        width: auto !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    #container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        align-items: normal;
+    }
+}

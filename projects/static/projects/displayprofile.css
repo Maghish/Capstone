@@ -1,0 +1,32 @@
+@media (max-width: 992px) {
+    .display-user-profile-title-element-div {
+        padding-left: 20px;
+    }
+
+    .display-user-profile-details-div {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .display-user-profile-body-div {
+        flex-direction: column !important;
+    }
+
+    .display-user-profile-projects-div {
+        align-items: normal !important;
+        padding-left: 10px;
+    }
+
+    .display-user-profile-details-div {
+        padding-right: 10px;
+    }
+
+    .display-user-profile-projects-title-element-div {
+        text-align: start !important;
+    }
+
+    .card {
+        width: auto !important;
+    }
+}

@@ -1,0 +1,30 @@
+{% extends "projects/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <link href="{% static 'projects/forms.css' %}" rel="stylesheet">
+
+    <div class="container">
+        <div class="login-view-div">
+            <div class="login-form">
+                <h2>Login</h2>
+                {% if error_message %}
+                    <div class="alert alert-warning alert-box" style="color: black;" role="alert">{{ error_message }}</div>
+                {% endif %}
+                <form action="{% url 'login_view' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group-div">
+                        <input class="form-cls" type="text" style="margin-bottom: 10px;" name="username" placeholder="Enter your username">
+                        <input class="form-cls" type="password" style="margin-bottom: 10px;" name="password" placeholder="Enter your password">
+                    </div>
+                    <input class="btn submit-btn" type="submit" value="Login">
+                </form>
+                <div class="signup-link">
+                    Don't have an account? <a href="{% url 'signup_view' %}" >Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

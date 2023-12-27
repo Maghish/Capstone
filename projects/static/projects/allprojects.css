@@ -1,0 +1,27 @@
+@media (max-width: 705px) {
+    .display-all-projects-div .card {
+        width: 400px;
+    }
+}
+
+@media (max-width: 505px) {
+    .display-all-projects-div .card {
+        width: auto;
+    }
+
+    .display-all-projects-div .card .card-body {
+        padding: 10px;
+    }
+
+    .display-all-projects-outer-div {
+        width: auto !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    #container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        align-items: normal;
+    }
+}
